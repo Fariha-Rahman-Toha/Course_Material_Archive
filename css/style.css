@@ -1,0 +1,438 @@
+
+*{
+    margin:0 0;
+    padding:0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    border: 1px transparent;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.navbar-custom{
+    background-color:#093E40;
+}
+.img-responsive{
+    width: 100%;
+}
+.logo-resize{
+    height:80px;
+}
+.slideshow{
+    background-image: linear-gradient(rgba(1, 18, 34, 0.5), rgba(14, 26, 23, 0.712)), url(../images/building.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20% 0;
+    justify-content: center;
+    text-align: center;
+}
+.typewriter h1 {
+    width:auto;
+    display: inline-block;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid turquoise; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 10px; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30,end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:turquoise}
+  }
+  .archive{
+    display:block;
+    margin:0 auto;
+    height:123px;
+    width:144px;
+    
+  }
+  .disclaimer{
+    width:100%;
+    background-color: rgba(123, 219, 179, 0.589);
+  }
+  .aboutus{
+    background-color: rgba(0, 2, 1, 0.973);
+    height: 100%;
+    text-align: center; 
+    padding: 60px 15px;
+    width:100%;
+  }
+  .type {
+    color:#0000;
+    background:
+      linear-gradient(-90deg,#04f340ee 5px,#0000 0) 10px 0,
+      linear-gradient(#5dff35 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+     b .7s infinite steps(1),   
+     t calc(var(--n)*.1s) steps(var(--n)) forwards;
+  }
+  
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
+.footer-sec{
+    text-align:center;
+     height: 100%;
+     width:100%;
+      padding: 0.2px;
+      background-color: #093E40;
+      color:white;
+
+}
+/* for login page*/
+  .bubbles{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    z-index:0;
+    overflow:hidden;
+    top:0;
+    left:0;
+  }
+  .bubble{
+    position: absolute;
+    bottom:-100px;
+    width:40px;
+    height: 40px;
+    background:#d9fcbe;
+    border-radius:50%;
+    opacity:0.5;
+    animation: rise 10s infinite ease-in;
+  }
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:10%;
+    animation-duration:8s;
+  }
+  .bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:20%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:70%;
+    animation-duration:12s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  @keyframes rise{
+    0%{
+      bottom:-100px;
+      transform:translateX(0);
+    }
+    50%{
+      transform:translate(100px);
+    }
+    100%{
+      bottom:1080px;
+      transform:translateX(-200px);
+    }
+  }
+  /* From https://css.glass */
+ 
+  .box form{
+    align-items: center;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 42px;
+    height: 250px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-top: 10px;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 35px 35px;
+  }
+  .box input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 0;
+    margin-top: 8px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .box input::placeholder{
+    color: #e5e5e5;
+    padding: 15px;
+}
+  .box .b1 a{
+    text-decoration: none;
+        margin-top: 50px;
+        background-color: #000000;
+        color: yellowgreen;
+        padding: 15px 15px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+  }
+  .box .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .box .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  /* css for course list*/
+  .semester{
+    background-color:#93C0A4; 
+    width:80%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px; 
+    margin:1% auto; 
+    padding:10px 50px;
+  }
+  /*profile*/
+  .cov-bg{
+    padding: 160px; 
+    background:url(../images/istockphoto-1253862007-170667a.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  .cov-bg-faculty{
+    padding: 160px; 
+    background:url(../images/bg-faculty-profile.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  .dot {
+    margin: 0 auto 20px;
+    height: 150px;
+    width: 150px;
+    background:url(../images/pfp.jpg) center 0.1px;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  .timelinepfp {
+    margin: 0 auto 20px;
+    height: 50px;
+    width: 50px;
+    background:url(../images/pfp.jpg) center;
+    background-image: cover;
+    border-radius: 50%;
+    display: flex; 
+    align-items: left; 
+  }
+  .timeline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 20%;
+    margin-left: -2.5px
+}
+
+.timeline>li {
+    position: relative;
+    min-height: 50px;
+    padding: 20px 0
+}
+
+.timeline .timeline-time {
+    position: flex;
+    left: 0;
+    width: 18%;
+    text-align: right;
+    top: 30px;
+}
+
+.timeline .timeline-time .date,
+.timeline .timeline-time .time {
+    display: flex;
+    font-weight: 600
+}
+/*assignment*/
+.collapsible {
+    background-color: #93C0A4;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  
+  .active, .collapsible:hover {
+    content: "\2796";
+    background-color: #94bb86;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #b8f2e6;
+  }
+  /*--*/
+/*for routine*/
+#semester{
+    background: url(../images/semester.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+#semester h2{
+     font-size: 60px;
+   color: rgb(204, 212, 203); 
+   text-align: center ;
+}
+#semester h1{
+    font-size: 50px;
+    color: rgb(207, 228, 205);     text-align: center ; 
+}
+
+
+
+#course {
+    background-color:#CDD3D5 ;
+    background-size: cover;
+    padding: 0 auto;
+    width:100%;
+    text-align: center;
+    
+}
+
+#course h5{
+   text-align: center;
+   background-color:#A0AAB2;
+   padding: 20px 0;
+}
+
+#course ul{
+    display: inline-block;
+    text-align: left ;
+    padding:0 auto;
+        font-size:20px;
+        color: rgb(0, 0, 0); 
+}
+/* #course .code{
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    float: left;
+} */
+
+
+/* #course .name {
+padding: 1px;
+} */
+
+#course .name h5{
+    font-style: bold;
+    font-size: 60px;
+    padding: 23px 0;
+    color: rgb(0, 0, 0); 
+}
+
+
+#course h5{
+    color: rgb(0, 0, 0); 
+    font-size: 28px;
+    text-align: center;
+    background-color: #81968F;
+    padding: 24px; 
+ 
+}
+
+/*--*/
+/* books */
+
+  @media only screen and(min-width:450px){
+   .logo-resize{
+    width:80%;
+    float:none;
+    margin: 1% auto;
+   } 
+  }
+
+  
