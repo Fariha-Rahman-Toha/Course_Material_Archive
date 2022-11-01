@@ -1,0 +1,232 @@
+<!Doctype HTML>
+	<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="../admin/dashboardstyle.css">
+		  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+
+	<body>
+		
+		<div id="mySidenav" class="sidenav">
+			
+			<p class="logo"><img src="../images/logo.png" alt="BUP.png">ICT ARCHIVE</p>
+			<a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i>   Dashboard</a>
+			<a href="#"class="icon-a"><i class="fa fa-book"></i> Add Courses  </a>
+			<a href="#"class="icon-a"><i class="fa fa-upload"></i>  Upload Course Materials</a>
+			<a href="#"class="icon-a"><i class="fa fa-address-card"></i> Add Students</a>
+			<a href="#"class="icon-a"><i class="fa fa-address-card-o"></i>  Add Teachers</a>
+			<a href="#"class="icon-a"><i class="fa fa-cog"></i>  Settings</a>
+
+		</div>
+		<div id="main">
+
+					<div class="head">
+						<div class="col-div-6">
+				<span style="font-size:30px;cursor:pointer; color: white;" class="nav"  >Dashboard</span>
+				<span style="font-size:30px;cursor:pointer; color: white;" class="nav2"  >Dashboard</span>
+			</div>
+				
+				<div class="col-div-6">
+					<div class="profile" style="text-align: right;">
+
+						
+						<a href="../visitors/admin_login.php"class="icon-a"  style="text-align: right;">Admin</a>
+                        <a href="../visitors/index.html"  style="text-align: right;" class="icon-a">Log Out</a>
+						
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+				<div class="clearfix"></div>
+				<br/>
+				
+				<div class="col-div-3">
+					<div class="box">
+						<p>3456<br/><span>Total Students</span></p>
+					</div>
+				</div>
+				<div class="col-div-3">
+					<div class="box">
+						<p>25<br/><span>Total Teachers</span></p>
+					</div>
+				</div>
+				<div class="col-div-3">
+					<div class="box">
+						<p>2% increase(Monthly)<br/><span>New Students</span></p>
+					</div>
+				</div>
+				<div class="col-div-3">
+					<div class="box">
+						<p>60<br/><span>Number of Courses</span></p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<br/><br/>
+
+				<div class="col-div-8">
+					<div class="box-8">
+						<div class="content-box">
+							<p>Student List <span>View All</span></p>
+							<br/>
+							<table>
+								<tr>
+									<th>Name</th>
+								
+									<th>+</th>
+								</tr>
+								<tr>
+									<td>Fariha Rahman</td>
+									
+									<td>Delete</td>
+								</tr>
+								<tr>
+									<td>Tasfia Zaima</td>
+								
+									<td>Delete</td>
+								</tr>
+								
+								<tr>
+									<td>Khadiza Akter</td>
+									
+									<td>Delete</td>
+								</tr>
+								
+								
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-div-8">
+					<div class="box-8">
+						<div class="content-box">
+							<p>Course List <span>View All</span></p>
+							<br/>
+							<table>
+								<tr>
+									<th>Name</th>
+						
+									<th>+</th>
+								</tr>
+								<tr>
+									<td>Web Technology</td>
+									
+									<td>Edit</td>
+								</tr>
+								<tr>
+									<td>Software Engineering</td>
+									
+									<td>Edit</td>
+								</tr>
+								
+								<tr>
+									<td>OODP</td>
+									
+									<td>Edit</td>
+								</tr>
+								
+								
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-div-8">
+					<div class="box-8">
+						<div class="content-box">
+							<p>Materials <span>View All</span></p>
+							<br/>
+							<table>
+								<tr>
+									<th>Name</th>
+									
+									<th>+</th>
+								</tr>
+								<tr>
+									<td>Html.pdf</td>
+									
+									<td>Edit<br> Delete</td>
+								</tr>
+								<tr>
+									<td>Css.pdf</td>
+									
+									<td>Edit<br> Delete</td>
+								</tr>
+								
+								<tr>
+									<td>Laravels.pdf</td>
+									
+									<td>Edit <br>Delete</td>
+								</tr>
+								
+								
+							</table>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="col-div-4">
+					<div class="box-4">
+					<div class="content-box">
+						
+							<p> Log Out</p>
+				
+					</div>
+				</div>
+				</div>
+
+
+
+				<div class="clearfix"></div>
+
+
+				
+
+
+
+		</div>
+
+
+
+
+
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+
+		$(".nav").click(function(){
+			$("#mySidenav").css('width','70px');
+			$("#main").css('margin-left','70px');
+			$(".logo").css('visibility', 'hidden');
+			$(".logo span").css('visibility', 'visible');
+			$(".logo span").css('margin-left', '-10px');
+			$(".icon-a").css('visibility', 'hidden');
+			$(".icons").css('visibility', 'visible');
+			$(".icons").css('margin-left', '-8px');
+			$(".nav").css('display','none');
+			$(".nav2").css('display','block');
+		});
+
+		$(".nav2").click(function(){
+			$("#mySidenav").css('width','300px');
+			$("#main").css('margin-left','300px');
+			$(".logo").css('visibility', 'visible');
+			$(".icon-a").css('visibility', 'visible');
+			$(".icons").css('visibility', 'visible');
+			$(".nav").css('display','block');
+			$(".nav2").css('display','none');
+		});
+
+		</script>
+
+
+
+
+	</body>
+
+
+	</html>
