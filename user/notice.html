@@ -17,14 +17,14 @@
         <div class="m-4">            
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a href="../user/home.html" class="navbar-brand"><img src="../images/logo.png" style="height: 80px;width:100%;" class="logo-resize img-responsive"></a>
+                    <a href="../visitors/home.html" class="navbar-brand"><img src="../images/logo.png" style="height: 80px;width:100%;" class="logo-resize img-responsive"></a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav">
         
-                            <a href="../user/home.html" class="nav-item nav-link link-light">Home</a>
+                            <a href="../visitors/home.html" class="nav-item nav-link link-light">Home</a>
                             <a href="../user/studentprofile.html" class="nav-item nav-link link-light">Profile</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown">Course Materials</a>
@@ -48,15 +48,11 @@
                                 <a href="#" class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown">Others</a>
                                 <div class="dropdown-menu">
                                     <a href="../user/notice.html" class="dropdown-item">Noticeboard</a>
+                                    <a href="../Faculties/faculties.html" class="dropdown-item">Faculty Members</a>
                                 </div>
                             </div>
                         </div>
-                        <form class="d-flex">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
-                            </div>
-                        </form>
+                
                         <div class="navbar-nav">
                             <a href="../visitors/index.html" class="nav-item nav-link">Log Out</a>
                         </div>
@@ -79,6 +75,70 @@
           </div>
     </section>
     <h2 class="container" style="color: #93C0A4; text-align: center;"> Notice Board</h2>
+    <section class="semester">
+        <div class="container">
+            <h1 class="text-center">CT/Assignment/Term-paper</h1>
+    <!-- Table Data -->
+    <div class="container">
+        <hr>
+        <input type="text" id="myInput" onkeyup='tableSearch()' placeholder="Course">
+
+        <table class="table" id="myTable" data-filter-control="true" data-show-search-clear-button="true" style="align-items: center;">
+            <tr>
+                <th>Deadlines</th>
+                <th>Courses</th>
+                <th>Content</th>
+            </tr>
+            <tr>
+                <td>27/10/2022</td>
+                <td>ETA</td>
+                <td>CT-04</td>
+            </tr>
+            <tr>
+                <td>30/10/2022</td>
+                <td>SRE</td>
+                <td>CT-04</td>
+            </tr>
+            <tr>
+                <td>30/11/2022</td>
+                <td>ETA</td>
+                <td>WT lab quiz</td>
+            </tr>
+            <tr>
+                <td>31/10/2022</td>
+                <td>ETA</td>
+                <td>Hardcopy Submission of given assignment</td>
+            </tr>
+            <tr>
+                <td>31/10/2022</td>
+                <td>MCA</td>
+                <td>CT-04</td>
+            </tr>
+            <tr>
+                <td>02/11/2022</td>
+                <td>SRE</td>
+                <td>Sprint-2 Showcase</td>
+            </tr>
+            <tr>
+                <td>02/11/2022</td>
+                <td>WT</td>
+                <td>Written Assignment Submission</td>
+            </tr>
+            <tr>
+                <td>03/11/2022</td>
+                <td>WT</td>
+                <td>Cloned Website submission</td>
+            </tr>
+            <tr>
+                <td>06/11/2022</td>
+                <td>WT</td>
+                <td>Project Showcase</td>
+            </tr>
+            
+        </table>
+    </div>
+        </div>
+    </section>
     <section class="semester">
         <div class="container">
             <b>05.08.2022</b><hr>
@@ -117,6 +177,31 @@
     </p>
         </div>
     </section>
+
+    <script type="application/javascript">
+        function tableSearch() {
+            let input, filter, table, tr, td, txtValue;
+
+            //Intialising Variables
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            for (let i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+        }
+    </script>
     
 </body>
 </html>

@@ -1,0 +1,263 @@
+
+*{
+    margin:0 0;
+    padding:0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul,ol{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    border: 1px transparent;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    /* height: 550px; */
+
+}
+.navbar-custom{
+    background-color:#093E40;
+}
+.img-responsive{
+    width: 100%;
+}
+.logo-resize{
+    height:80px;
+}
+
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #353535;
+
+
+ 
+}
+
+
+
+
+
+
+
+
+#semester{
+    background: url(../images/semester.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+#semester h2{
+     font-size: 60px;
+   color: rgb(204, 212, 203); 
+   text-align: center ;
+}
+#semester h1{
+    font-size: 100px;
+    color: rgb(207, 228, 205);     text-align: center ; 
+}
+
+
+
+
+
+/* =============================================
+            team part start
+==================================================== */
+#team-part{
+    margin-top: 0;
+}
+
+#team-part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#team-part .title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #4db236;
+    background-color: #22694f;
+    padding: 36px;
+    margin: 0;
+}
+
+#team-part .title h4{
+    background-color: #6fe26b42;
+    padding: 25px;
+}
+
+#team-part .title p{
+    background-color: rgb(207, 228, 205);    
+     text-align: center ;
+    font-size: 30px;
+    font-weight: 600;
+margin: 0;
+    padding: 20px;
+
+
+
+}
+
+
+#team-part .member{
+    width: 30%;
+    position: relative;
+    margin-top: 50px;
+}
+#team-part .member .img{
+    position: relative;
+    transition: .4s;
+    top: 0;
+}
+
+#team-part .member .img img{
+    width: 100%;
+    display: block;
+    border-radius: 10%;
+    padding-right:  14px;;
+
+}
+
+#team-part .member .img .overlay{
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px;
+}
+
+
+#team-part .member .img .overlay .logo{
+
+    text-align: center;
+}
+
+
+#team-part .member .img .overlay .logo i {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 47px;
+    color: #353535;
+    background: #f1f1f1;
+    font-size: 16px;
+    margin: 168px 0;
+    transition: all linear .3s;
+}
+
+#team-part .member .img .overlay .logo i:hover{
+    color: #fff;
+    background:  #1da1f2;
+}
+
+
+
+#team-part .member .text{
+    width: 100%;
+    /* border: 1px solid #f1f1f1; */
+    position: relative;
+    top: -47%;
+    left: 0;
+    z-index: -1;
+    text-align: center;
+    padding: 21px;
+    box-sizing: border-box;
+    color: #000;
+    transition: .4s;
+    
+
+
+}
+
+
+
+#team-part .member .text h3{
+    font-size: 16px;
+}
+
+#team-part .member .text h4{
+    font-size: 24px; 
+}
+
+#team-part .member .text p{
+    font-size: 18px;
+}
+
+#team-part .member:hover .text{
+    top: -52px;
+    color: #353535;
+    font-family: "Raleway";
+
+}
+
+#team-part .member:hover .text h3{
+    padding: 0px 0;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Raleway";
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+
+
+
+}
+#team-part .member:hover .text h4{
+    padding: 11px 0;
+    font-size: 28px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto Slab', serif;
+
+}
+
+
+#team-part .member:hover .img{
+    top: -50px;
+}
+
+#team-part .member:hover .img .overlay{
+    opacity: 1;
+}
+
+
+/* =============================================
+            team part end
+=============================================== */
+
+
+
+.footer{
+    text-align:center;
+     max-height: 120px;
+      padding: 30px;
+      background-color: #093E40;
+      color:white;
+     padding: 19px 0 0 0 ;
+}
